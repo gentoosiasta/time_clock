@@ -12,9 +12,10 @@ const Timer = () => {
     })
 
     return (
-        <div className="col">
-            <h1>{date.toLocaleTimeString()}</h1>
-            <h3>{date.toLocaleDateString()}</h3>
+        <div className="col text-center text-white mt-5">
+            <span className="text-4xl font-bold">{date.toLocaleTimeString()}</span>
+            <br />
+            <span className="font-bold">{date.toLocaleDateString()}</span>
         </div>
     )
 }

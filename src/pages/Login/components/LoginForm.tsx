@@ -4,8 +4,8 @@ import { Password } from "primereact/password"
 
 const LoginForm = () => {
   return (
-    <div className="col">
-        <div className="card">
+    <>
+        <div className="w-10 col-offset-1 md:w-6 md:col-offset-3 px-3 py-5 text-center bg-white border-round-lg shadow-5">
             <div className="p-inputgroup">
                 <span className="p-inputgroup-addon">
                     <i className="pi pi-user"></i>
@@ -19,12 +19,12 @@ const LoginForm = () => {
                 <Password placeholder="Contraseña" />
             </div>
             <Button
-                className="mt-5"
-                label="Regístrate"
+                className="mt-3"
+                label="Registrar E/S"
                 raised
             />
         </div>
-    </div>
+    </>
   )
 }
 
