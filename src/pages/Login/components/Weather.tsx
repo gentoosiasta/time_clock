@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
 import { getLocalWeather } from "../../../api/weatherapi"
-import { Current } from "./Interfaces/IWeather" 
+import { ICurrent } from "../../../Interfaces/IWeather" 
 
 const Weather = () => {
-    const [localWeather, setLocalWeather] = useState<Current | null>(null)
+    const [localWeather, setLocalWeather] = useState<ICurrent | null>(null)
     useEffect(() => {
         const getWeather = async () => {
             const { current } = await getLocalWeather()

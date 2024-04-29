@@ -1,4 +1,4 @@
-interface Current {
+interface ICurrent {
     last_updated_epoch: number;
     last_updated: string;
     temp_c: number;
@@ -30,4 +30,4 @@ interface Condition {
     code: number;
 }
 
-export type { Current, Condition };
+export type { ICurrent, Condition };
